@@ -1,0 +1,63 @@
+# Cursor 에디터 개인 설정/캐시/시크릿 전체 무시 (권장)
+.cursor/
+
+node_modules
+# Node.js & npm
+node_modules/
+
+# Next.js 빌드 아티팩트
+.next/
+out/
+
+# TypeScript 빌드 결과
+dist/
+build/
+*.tsbuildinfo
+
+# 환경 변수 및 시크릿
+.env
+.env.*
+!.env.example
+
+# 로그, 임시 파일, 운영체제별 파일
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# IDE/에디터 설정
+.vscode/
+.idea/
+*.swp
+
+# 테스트/커버리지
+coverage/
+*.lcov
+
+# Supabase/DB 관련
+.supabase/
+.supabase/**
+
+# 벡터 DB(Chroma/Pinecone 등) 로컬 데이터
+chroma_data/
+pinecone_data/
+
+# AI/LLM 관련 캐시
+.cache/
+ai_cache/
+workspace_cache/
+
+# 기타
+*.local
+*.sublime-workspace
+*.sublime-project
+
+# 커스텀 규칙 (필요시 추가)
+# .cursor/ 디렉토리 내 개인 설정 등
+.cursor/local/
+.cursor/cache/
+
