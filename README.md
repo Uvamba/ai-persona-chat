@@ -98,7 +98,7 @@ npm run dev
 v2에서는 **RAG(Retrieval-Augmented Generation)** 기반의 **장기 기억 기능(Long-Term Memory)** 도입을 목표로 합니다.
 
 * 사용자별 과거 대화 기반 정보 검색 및 참조
-* 지속적인 맥락 유지 및 개별화된 장기 상호작용 강화
+* 장기적인 대화 맥락 유지
 
 ---
 
