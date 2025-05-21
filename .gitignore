@@ -61,3 +61,4 @@ workspace_cache/
 .cursor/local/
 .cursor/cache/
 
+next-env.d.ts

@@ -80,9 +80,11 @@ NEXT_PUBLIC_TEST_USER_PASSWORD=
 ### 3. Supabase 설정
 
 - Supabase 프로젝트를 생성하고, DB 및 키 발급
-- `migrations/create_chat_tables.sql` 실행 → `conversations`, `messages` 테이블 생성
-- `personas` 테이블은 SQL 실행 또는 Supabase Studio에서 수동 생성
-- 각 테이블에 대해 **RLS 정책(Role Level Security)** 설정 필요
+- `migrations/create_chat_tables.sql` 실행 → `conversations`, `messages`, `personas` 테이블 생성 (필요시 `chat_history` 테이블도 생성 또는 마이그레이션 파일에 추가)
+- 각 테이블에 대해 **RLS 정책(Role Level Security)** 설정 필요 ( `create_chat_tables.sql` 내에 기본 정책 포함)
+  - `conversations`: 사용자는 자신의 대화만 관리 가능
+  - `messages`: 사용자는 자신의 대화에 포함된 메시지만 관리 가능
+  - `personas`: 사용자는 자신이 생성한 페르소나를 관리하고, 기본 제공 페르소나를 조회할 수 있음.
 
 ### 4. 개발 서버 실행
 
